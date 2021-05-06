@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "DynamicMatTables": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DynamicMatTables"
+    }
+  },
+  "defaultProject": "DynamicMatTables",
+  "cli": {
+    "analytics": "3a68b1cc-b3f9-4448-b47e-c3843084d611"
+  }
 }
