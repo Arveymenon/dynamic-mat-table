@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { TableColumn, TableEntry, TableMapping } from './table-map';
+import { TableMapping } from './table-map';
 
 import * as moment from 'moment';
 
 import * as data from 'src/dummy-data/data.json';
+import { TableEntry } from 'src/interfaces/table';
 
 @Component({
   selector: 'app-root',
