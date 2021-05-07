@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { TableMapping } from './table-map';
 
+import { TableEntry, TableColumn } from 'src/interfaces/table';
+
 import * as moment from 'moment';
 
 import * as data from 'src/dummy-data/data.json';
-import { TableEntry } from 'src/interfaces/table';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ export class AppComponent {
   public dataSource = [];
   public displayedColumns: string[] = []
   protected tableMapping = new TableMapping
-  public schema: {key: string, value: TableEntry}[] = []
+  public schema: TableColumn[] = []
 
   constructor(){
     this.createDataTable(data.res.response)
