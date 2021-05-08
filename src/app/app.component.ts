@@ -42,9 +42,10 @@ export class AppComponent {
   getData(column, element){
     if(column.value.datePipeFormat){
       return this.dateTransform(((column.value.data || element[column.value.datakey]) || element[column.key]),  column.value.datePipeFormat )
-    } else {
-      return (((column.value.data || element[column.value.datakey])) || element[column.key])
     }
+     
+    return (((column.value.data || element[column.value.datakey])) || element[column.key])
+
   }
 
   getHeader(value: TableEntry | string){
